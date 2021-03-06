@@ -154,8 +154,8 @@ namespace CodeLuau.Tests
 			//act
 			var result = speakerThatDoesntAppearExceptional.Register(repository);
 
-			//assert
-			Assert.AreEqual(RegisterError.SpeakerDoesNotMeetStandards, result.Error);
+            //assert
+            Assert.AreEqual(RegisterError.SpeakerDoesNotMeetStandards, result.Error);
 		}
 
 		#region Helpers
@@ -169,7 +169,7 @@ namespace CodeLuau.Tests
 				Employer = "Example Employer",
 				HasBlog = true,
 				Browser = new WebBrowser("test", 1),
-				Exp = 1,
+				YearsExperience = 1,
 				Certifications = new System.Collections.Generic.List<string>(),
 				BlogURL = "",
 				Sessions = new System.Collections.Generic.List<Session>() {
